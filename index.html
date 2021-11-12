@@ -1,0 +1,239 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Bowen Xu's Homepage</title>
+      <style type="text/css">
+         body {
+         font-family: cambria, calibri, garamond, century, gulim, dotum, arial;
+         font-size: 18px;
+         margin: 0 auto;
+         width: 90%;
+         min-width: 200px;
+         max-width: 1300px;
+         width: expression_r(Math.max(200, Math.min(1300, document.body.offsetWidth-40)) + "px");
+         }
+      </style>
+      <style>
+         table {
+         font-family: cambria, calibri, garamond, century, gulim, dotum, arial;
+         border-collapse: collapse;
+         width: 100%;
+         font-size:18px;}
+      </style>
+      <style>
+         /* The navigation bar */
+         .navbar {
+         overflow: hidden;
+         background-color: #333;
+         position: fixed; /* Set the navbar to fixed position */
+         top: 0; /* Position the navbar at the top of the page */
+         width: 90%; /* Full width */
+         }
+         /* Links inside the navbar */
+         .navbar a {
+         float: left;
+         display: block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         }
+         /* Change background on mouse-over */
+         .navbar a:hover {
+         background: #ddd;
+         color: black;
+         }
+         /* Main content */
+         .main {
+         margin-top: 0px; /* Add a top margin to avoid content overlay */
+         }
+      </style>
+      <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      /* Create two equal columns that sits next to each other */
+      .column {
+        flex: 50%;
+        padding: 50px;
+      }
+      </style>
+      <div class="navbar">
+         <a class="active" href="#About">About</a>
+         <a href="#Publications">Publications</a>
+         <a href="#Talks">Talks</a>
+         <a href="#Service">Professional Service</a>
+         <a href="#Bio">Biography</a>
+         <a href="#Teaching">Teaching</a>
+         <a href="#Supervision">Supervision</a>
+         <a href="#Awards">Awards</a>
+      </div>
+      <p></p>
+   </head>
+   <body>
+      <div id="About">
+
+         <div class="row">
+           <div class="column">
+             <img src="photos/me.jpeg" height=304.75 width=257.2 border="0"  align="center">
+           </div>
+           <div class="column">
+            <p></p>
+             <h2>Bowen Xu/徐 博文</h2>
+             <p>Research Scientist (Post-Doc)<br/>
+                <a href="https://soarsmu.github.io">SOAR Lab</a><br> School of Computing and Information Systems<br> Singapore Management University<br/>
+                bowenxu.2017@phdcs.smu.edu.sg
+             </p>
+           </div>
+         </div>
+                     <b>Research Interests</b>: Data Science for Software Engineering - From data to knowledge, from knowledge to intelligence.<br>
+                     <ul>
+                        <li>Discovery</li>
+                        <ul>
+                           <li>Code Reuse and Re-implementation</li>
+                           <ul>
+                              <li>[EMSE-19] <em>Why Reinventing the Wheels? An Empirical Study on Library Reuse and Re-implementation</em>. <a href="publications/EMSE2019.pdf">PREPRINT</a> <a href="publications/EMSE2019_bib.html">BIB</a> <a href="https://github.com/maxxbw54/reuse_reimpl">Code</a></li>
+                           </ul>
+                        </ul>
+                        <li>Management</li>
+                        <ul>
+                           <li>Knowledge Linking</li>
+                           <ul>
+                              <li>[ESEM-18-Extension] <em>Prediction of Relatedness in Stack Overflow: Deep Learning vs. SVM - A Reproducibility Study</em>. Highly Commended Full Paper Award <a href="publications/ESEM_highly_commended_full_paper_award.pdf"><b>Highly Commended Full Paper Award</b></a> <a href="publications/ESEM2018.pdf">PDF</a> <a href="publications/ESEM2018_bib.html">BIB</a> <a href="publications/ESEM2018-Slide.pdf">Slide</a> <a href="https://github.com/maxxbw54/ESEM2018">Code</a></li>
+                              <li>[ASE-16] <em>Predicting Semantically Linkable Knowledge in Developer Online Forums via Convolutional Neural Network</em>. <a href="publications/ASE2016.pdf">PDF</a> <a href="publications/ASE2016_bib.html">BIB</a> <a href="https://github.com/maxxbw54/ase16-CNN">Code</a></li>
+                           </ul>
+                           <li>Knowledge Representation</li>
+                           <ul>
+                              <li>[TSE-21] <em>Post2Vec: Learning Distributed Representations of Stack Overflow Posts</em>.<a href="publications/TSE21_Post2Vec_preprint.pdf">PREPRINT</a></li>
+                           </ul>
+                        </ul>
+                        <li>Applications</li>
+                        <ul>
+                           <li>Answer Summary Generation</li>
+                           <ul>
+                              <li>[ESE/FSE-19-Tool Demo] <em>AnswerBot: An Answer Summary Generation Tool Based on Stack Overflow</em>. <a href="publications/FSE2019_Tool.pdf">PDF</a> <a href="publications/FSE2019_Tool_bib.html">BIB</a> <a href="https://youtu.be/EfHp_Cbeg2w">Video</a> <a href="http://answerbot.se-research.org">Demo</a> <a href="https://github.com/maxxbw54/AnswerBot">Code</a></li>
+                              <li>[ASE-17] <em>AnswerBot - Automated Generation of Answer Summary to Developers' Technical Questions</em>. <a href="publications/ASE2017.pdf">PDF</a> <a href="publications/ASE2017_bib.html">BIB</a> <a href="https://github.com/maxxbw54/AnswerBot">Code</a> <a href="publications/ASE2017-Slide.pdf">Slide</a> <a href="publications/ASE2017-Poster.pdf">Poster</a></li>
+                           </ul>
+                           <li>Cross-language Information Retrieval</li>
+                           <ul>
+                              <li>[ESE/FSE-17-Tool Demo] <em>XSearch: A DomainSpecific Cross-Language Relevant Question Retrieval Tool</em>. <a href="publications/FSE2017_Tool.pdf">PDF</a> <a href="publications/FSE2017_Tool_bib.html">BIB</a> <a href="https://youtu.be/GP3avNER0Os">Video</a> <a href="http://67.230.191.128:8080/XSearch">Demo</a></li>
+                              <li>[EMSE-17-Extension] <em>Domain-Specific Cross-Language Relevant Question Retrieval</em>. <a href="publications/EMSE2017.pdf">PREPRINT</a> <a href="publications/EMSE2017_bib.html">BIB</a></li>
+                              <li>[MSR-16] <em>Domain-Specific Cross-Language Relevant Question Retrieval</em>. Invited to Empirical Software Engineering Journal <a href="publications/MSR2016.pdf">PDF</a> <a href="publications/MSR2016_bib.html">BIB</a></li>
+                           </ul>
+                        </ul>
+                     </ul>
+      </div>
+      <div id="Bio">
+         <h2>Bio</h2>
+         <p>I am a Research Scientist (Post-Doc) in the School of Computing and Information Systems (SCIS) at Singapore Management University (SMU). I got my PhD in August 2021 from SCIS at SMU, supervised by <a href="http://www.mysmu.edu/faculty/davidlo/">Prof. David Lo</a>. Before I joined SMU, I received my Master Degree of Engineering in June 2017 from the Colloge of Computer Science and Technology of <a href="https://www.zju.edu.cn/english">Zhejiang University</a>, supervised by <a href="https://person.zju.edu.cn/en/0087125">Prof. Shanping Li</a> and <a href="https://xin-xia.github.io/">Prof. Xin Xia</a>. During my master career, I was a visiting student in the School of Computer Science and Engineering, <a href="https://www.ntu.edu.sg/">Nanyang Technological University</a>, supervised by <a href="https://cecs.anu.edu.au/people/zhenchang-xing">Prof. Zhenchang Xing</a>.</p>
+         <p></p>
+      </div>
+      <div id="Publications">
+         <h2>Selected Publications</h2>
+         <p></p>
+         You can also find the full list of my articles on <a href="https://scholar.google.com.sg/citations?user=tLWbczIAAAAJ&hl=en">my Google Scholar profile</a>.
+         <h3>Conference Papers</h3>
+         <ul>
+            <li>[C9] Ting Zhang, <u>Bowen Xu (Corresponding Author)</u>, Ferdian Thung, Stefanus Agus Haryono, David Lo, Lingxiao Jiang. <em>Sentiment Analysis for Software Engineering: How Far Can Pre-trained Transformer Models Go?</em>. 36th IEEE International Conference on Software Maintenance and Evolution (ICSME 2020). Accepted as a Full Paper. <a href="publications/ICSME2020.pdf">PDF</a> <a href="publications/ICSME_bib.html">BIB</a> <a href="https://github.com/soarsmu/SA4SE">Code</a></li>
+            <li>[C8] Heng-Yi Li, Shu-Ting Shi, Ferdian Thung, Xuan Huo, <u>Bowen Xu</u>, Ming Li, and David Lo. <em>DeepReview: Automatic Code Review using Deep Multi-Instance Learning</em>. The 23rd Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2019). Accepted as a Full Paper. <a href="publications/PAKDD2019.pdf">PDF</a> <a href="publications/PAKDD2019_bib.html">BIB</a></li>
+            <li>[C7] <u>Bowen Xu</u>, Amirreza Shirani, David Lo and Mohammad Amin Alipour. <em>Prediction of Relatedness in Stack Overflow: Deep Learning vs. SVM - A Reproducibility Study</em>. 12th International Symposium on  Empirical Software Engineering and Measurement (ESEM 2018). Accepted as a Full Paper. <a href="publications/ESEM_highly_commended_full_paper_award.pdf"><b>Highly Commended Full Paper Award</b></a> <a href="publications/ESEM2018.pdf">PDF</a> <a href="publications/ESEM2018_bib.html">BIB</a> <a href="publications/ESEM2018-Slide.pdf">Slide</a> <a href="https://github.com/maxxbw54/ESEM2018">Code</a> </li>
+            <li>[C6] <u>Bowen Xu</u>, Zhenchang Xing, Xin Xia, David Lo. <em>AnswerBot - Automated Generation of Answer Summary to Developers' Technical Questions</em>. 32nd IEEE/ACM International Conference on Automated Software Engineering (ASE 2017). Accepted as a Full Paper. <a href="publications/ASE2017.pdf">PDF</a> <a href="publications/ASE2017_bib.html">BIB</a> <a href="https://github.com/maxxbw54/AnswerBot">Code</a> <a href="publications/ASE2017-Slide.pdf">Slide</a> <a href="publications/ASE2017-Poster.pdf">Poster</a></li>
+            <li>[C5] <u>Bowen Xu</u>, Deheng Ye, Zhenchang Xing, Xin Xia, Guibin Chen, Shanping Li. <em>Predicting Semantically Linkable Knowledge in Developer Online Forums via Convolutional Neural Network</em>. 31st IEEE/ACM International Conference on Automated Software Engineering (ASE 2016). Accepted as a Full Paper. <a href="publications/ASE2016.pdf">PDF</a> <a href="publications/ASE2016_bib.html">BIB</a> <a href="https://github.com/maxxbw54/ase16-CNN">Code</a></li>
+            <li>[C4] Guibin Chen, Chunyang Chen, Zhenchang Xing, <u>Bowen Xu</u>. <em>Learning a Dual-Language Vector Space for Domain-Specific Cross-Lingual Question Retrieval</em>. 31st IEEE/ACM International Conference on Automated Software Engineering (ASE 2016). Accepted as a Full Paper. <a href="publications/ASE2016_gbchen.pdf">PDF</a> <a href="publications/ASE2016_gbchen_bib.html">BIB</a></li>
+            <li>[C3] <u>Bowen Xu</u>, Zhenchang Xing, Xin Xia, David Lo, Qingye Wang, Shanping Li. <em>Domain-Specific Cross-Language Relevant Question Retrieval</em>. 13th International Conference on Mining Software Repositories (MSR 2016). Accepted as a Full Paper. <b>Invited to Empirical Software Engineering Journal</b> <a href="publications/MSR2016.pdf">PDF</a> <a href="publications/MSR2016_bib.html">BIB</a></li>
+            <li>[C2] <u>Bowen Xu</u>, David Lo, Xin Xia, Ashish Sureka, Shanping Li. <em>EFSPredictor: Predicting Configuration Bugs With Ensemble Feature Selection</em>. 22nd Asia-Pacific Software Engineering Conference (APSEC 2015). Accepted as a Full Paper. <a href="publications/APSEC2015.pdf">PDF</a> <a href="publications/APSEC2015_bib.html">BIB</a></li>
+            <li>[C1] Yun Zhang, David Lo, Xin Xia, <u>Bowen Xu</u>, Jianling Sun, Shanping Li. <em>Combining Software Metrics and Text Features for Vulnerable File Prediction</em>. 20th International Conference on Engineering of Complex Computer Systems (ICECCS 2015). Accepted as a Full Paper. <a href="publications/ICECCS2015.pdf">PDF</a> <a href="publications/ICECCS2015_bib.html">BIB</a></li>
+         </ul>
+         <h3>Journal Papers</h3>
+         <ul>
+            <li>[J3] <u>Bowen Xu</u>, Thong Hoang, Abhishek Sharma, Chengran Yang, Xin Xia, and David Lo. <em>Post2Vec: Learning Distributed Representations of Stack Overflow Posts</em>. IEEE Transactions on Software Engineering (TSE). Accepted. <a href="publications/TSE21_Post2Vec_preprint.pdf">PREPRINT</a></li>
+            <li>[J2] <u>Bowen Xu</u>, Le An, Ferdian Thung, Foutse Khomh, David Lo. <em>Why Reinventing the Wheels? An Empirical Study on Library Reuse and Re-implementation</em>. Empirical Software Engineering (EMSE). Accepted. <a href="publications/EMSE2019.pdf">PREPRINT</a> <a href="publications/EMSE2019_bib.html">BIB</a> <a href="https://github.com/maxxbw54/reuse_reimpl">Code</a></li>
+            <li>[J1] <u>Bowen Xu</u>, Zhenchang Xing, Xin Xia, David Lo, Shanping Li. <em>Domain-Specific Cross-Language Relevant Question Retrieval</em>. Empirical Software Engineering (EMSE). Accepted. <a href="publications/EMSE2017.pdf">PREPRINT</a> <a href="publications/EMSE2017_bib.html">BIB</a></li>
+         </ul>
+         <h3>Tool Demo Papers</h3>
+         <ul>
+            <li>[T2] Liang Cai, Haoye Wang, <u>Bowen Xu</u>, Qiao Huang, Xin Xia, David Lo, Zhenchang Xing. <em>AnswerBot: An Answer Summary Generation Tool Based on Stack Overflow</em>. The 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2019). Accepted as a tool demo paper. <a href="publications/FSE2019_Tool.pdf">PDF</a> <a href="publications/FSE2019_Tool_bib.html">BIB</a> <a href="https://youtu.be/EfHp_Cbeg2w">Video</a> <a href="http://answerbot.se-research.org">Demo</a> <a href="https://github.com/maxxbw54/AnswerBot">Code</a></li>
+            <li>[T1] <u>Bowen Xu</u>, Zhenchang Xing, Xin Xia, David Lo Xuan-Bach D. Le. <em>XSearch: A DomainSpecific Cross-Language Relevant Question Retrieval Tool</em>. 11th joint meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2017). Accepted as a tool demo paper. <a href="publications/FSE2017_Tool.pdf">PDF</a> <a href="publications/FSE2017_Tool_bib.html">BIB</a> <a href="https://youtu.be/GP3avNER0Os">Video</a> <a href="http://67.230.191.128:8080/XSearch">Demo</a></li>
+         </ul>
+         <h3>Workshop Papers</h3>
+         <ul>
+            <li>[W1] Amirreza Shirani, <u>Bowen Xu</u>, David Lo, Thamar Solorio and Mohammad Amin Alipour. <em>Question Relatedness on Stack Overflow: The Task, Dataset, and Corpus-inspired Model</em>. AAAI 2019 Reasoning and Complex QA Workshop (AAAI-RCQA).</li>
+         </ul>
+         <p></p>
+         <p></p>
+      </div>
+      <div id="Talks">
+         <h2>Talks</h2>
+         <ul>
+            <li><em>Why Reinventing the Wheels? An Empirical Study on Library Reuse and Re-implementation</em>, <a href="https://2020.icse-conferences.org/details/icse-2020-Journal-First/8/Why-Reinventing-the-Wheels-An-Empirical-Study-on-Library-Reuse-and-Re-implementation">ICSE 2020 Journal First, 10 Jul 2020, I21-Version Control and Programming</a></li>
+            <li><em>Benchmarking Example-Based Program Transformation Inference Tools</em>, Workshop on Program Transformation, 7 Dec 2020, Seminar Room 3-1, School of Information Systems, Singapore Management University, 80 Stamford Road, Singapore</li>
+         </ul>
+      </div>
+      <div id="Service">
+         <p></p>
+         <h2>Selected Professional Services</h2>
+         <ul>
+         	<li>Program Committee, Data and Tool Showcase Track, The 2022 Mining Software Repositories Conference (MSR'22)</li>
+            <li>Journal referee, ACM Transactions on Information Systems (TOIS), 2020.</li>
+            <li>Journal referee, ACM Transactions on Information Systems (TOIS), 2020.</li>
+            <li>Journal referee, Journal of Systems and Software (JSS), 2019.</li>
+            <li>
+               External Reviewer for the 19th IEEE International Working Conference on Source <a href="publications/ASE2016.pdf">Code</a> Analysis and Manipulation (SCAM), 2019.
+            </li>
+            <li>
+               External Reviewer for the 2nd International Workshop on Software Analytics (SWAN), 2016.
+            </li>
+            <li>
+               External Reviewer for the 2016 Annual Conference on Software Analysis, Testing and Evolution (SATE), 2016.
+            </li>
+         </ul>
+      </div>
+      <div id="Teaching">
+         <h2>Teaching</h2>
+         <p></p>
+         <ul>
+            <li>
+               January, 2020 - April, 2020: Teaching Assistant<br>
+               IS706 - Software Mining and Analysis, Singapore Management University (SMU)<br>
+               Responsibility:
+               <ul>
+                  <li>Design, and prepare the materials of the in-class exercise. And instruct and Q&A during the class.</li>
+                  <li>Lead the paper reading discussion.</li>
+                  <li><a href=""><a href="https://drive.google.com/file/d/1YMLzbd6gxM-9us67Ppbd1o_0ZtjuprSU/view?usp=sharing">Students' feedback</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="https://maxxbw.github.io/files/GI_Certification.pdf">Graduate Instructor Certification</a>, Singapore Management University, Singapore, 2019.
+            </li>
+         </ul>
+      </div>
+      <div id="Supervision">
+         <h2>Supervision</h2>
+         <p></p>
+         With the support of Prof. Lo, I am honored to mentor/collaborate the following students.
+         <ul>
+            <li>Ting Zhang, PhD</li>
+            <li>Chengran Yang, PhD</li>
+            <li>Jieke Shi, PhD</li>
+            <li>Junda He, PhD</li>
+         </ul>
+      </div>
+      <div id="Awards">
+         <h2>Awards</h2>
+         <p></p>
+         <ul>
+            <li><a href="files/DeansList.pdf">Dean's List</a>, Singapore Management University, Singapore, 2020.</li>
+            <li><a href="files/PDF-SIS_XuBowen.pdf">Presidential Doctoral Fellowship</a>, Singapore Management University, Singapore, 2020.</li>
+            <li><a href="files/phd_communication_skill.pdf">English Communication Skills for PhD Candidates Certification</a>, British Council, Singapore, 2019.</li>
+            <li>Excellent Graduate of Zhejiang Province, Ministry of Education of the People's Republic of Zhejiang Province (top3%), China, 2017.</li>
+            <li>Scholarship of State Street (top5%), State Street Corp, U.S.A, 2014.</li>
+            <li>National Scholarship (top3%), Ministry of Education of the People's Republic of China, China, 2012.</li>
+         </ul>
+      </div>
+   </body>
+</html>
