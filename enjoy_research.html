@@ -1,40 +1,35 @@
 <html>
    <head>
-   	<link rel="icon" href="imgs/icon.png">
+      <!-- <link rel="icon" href="imgs/icon.png"> -->
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <title>Better Research</title>
+      <title>Bowen Xu's Homepage</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       <style type="text/css">
          div.news {
-                height: 200px;
+                height: auto;
                 overflow: auto;
             }
          body {
          font-family: cambria, calibri, garamond, century, gulim, dotum, arial;
-         font-size: 18px;
+         font-size: 1.3vmax;
          margin: 0 auto;
          width: 90%;
-         min-width: 200px;
-         max-width: 1300px;
-         width: expression_r(Math.max(200, Math.min(1300, document.body.offsetWidth-40)) + "px");
+         padding-top:30px;
+         /*min-width: 200px;*/
+         /*max-width: 1300px;*/
+         /*width: expression_r(Math.max(200, Math.min(1300, document.body.offsetWidth-40)) + "px");*/
          }
-      </style>
-      <style>
-         table {
-         font-family: cambria, calibri, garamond, century, gulim, dotum, arial;
-         border-collapse: collapse;
-         width: 100%;
-         font-size:18px;}
       </style>
       <style>
          /* The navigation bar */
          .navbar {
          overflow: hidden;
          background-color: #333;
-         position: fixed; /* Set the navbar to fixed position */
+         position: fixed;  /* Set the navbar to fixed position*/ 
          top: 0; /* Position the navbar at the top of the page */
-         width: 90%; /* Full width */
+         width: 90%;  /* Full width */
          }
          /* Links inside the navbar */
          .navbar a {
@@ -47,12 +42,12 @@
          }
          /* Change background on mouse-over */
          .navbar a:hover {
-         background: #ddd;
-         color: black;
+         background: white;
+         color: #bb261a;
          }
          /* Main content */
          .main {
-         margin-top: 0px; /* Add a top margin to avoid content overlay */
+         margin-top: 3px; /* Add a top margin to avoid content overlay */
          }
       </style>
       <style>
@@ -67,7 +62,7 @@
       /* The alert message box */
       .alert {
       padding: 20px;
-      background-color: #eb7600; /* blue */
+      background-color: #bb261a; /* blue */
       color: white;
       margin-bottom: 15px;
       }
@@ -78,9 +73,24 @@
         padding: 40px;
       }
       </style>
+      <div class="navbar">
+         <a class="active" href="index.html">About</a>
+         <!-- <a href="#News">News</a> -->
+         <a href="publications.html">Publications</a>
+         <a href="teaching.html">Teaching</a>
+         <!-- <a href="#Talks">Talks</a> -->
+         <a href="service.html">Service</a>
+         <!-- <a href="#Bio">Biography</a> -->
+         <a href="supervision.html">Supervision</a>
+         <a href="enjoy_research.html">Enjoy Research</a>
+         <a href="files/CV.pdf">CV</a>
+         <!-- <a href="pages/blog.html">Blog</a> -->
+      </div>
       <p></p>
    </head>
-   <body background="../imgs/yellowbg.jpg">
+   <!-- <img border="0" width=100% height="20" src="imgs/line.bmp"> -->
+   <body background="imgs/yellowbg.jpg">
+      <h2 style="padding-top: 5vmax;"></h2>
       <br> <br>
       I summarized and actively maintain the following list of tips/tools to conduct better research. Both my juniors and I find they are quite useful. Hope they help you too.
 
@@ -88,9 +98,5 @@
         <li><a href="paper_submission_checklist.html">A last-minute checklist for research (conference and journal) paper submission</a></li>
         <li><a href="https://github.com/maxxbw54/Paper-Repository">Paper Search Tool</a></li>
       </ol>
-
-
-      <p style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;"> <a href="../index.html">[Back to Homepage]</a>  </p>
-
    </body>
 </html>
