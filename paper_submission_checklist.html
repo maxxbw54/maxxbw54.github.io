@@ -1,40 +1,36 @@
 <html>
    <head>
-   	<link rel="icon" href="imgs/icon.png">
+      <!-- <link rel="icon" href="imgs/icon.png"> -->
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <title>Better Research</title>
+      <title>Bowen Xu's Homepage</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       <style type="text/css">
          div.news {
-                height: 200px;
+                height: auto;
                 overflow: auto;
             }
          body {
          font-family: cambria, calibri, garamond, century, gulim, dotum, arial;
-         font-size: 18px;
+         font-size: 1.3vmax;
          margin: 0 auto;
          width: 90%;
-         min-width: 200px;
-         max-width: 1300px;
-         width: expression_r(Math.max(200, Math.min(1300, document.body.offsetWidth-40)) + "px");
+         padding-top:30px;
+         /*min-width: 200px;*/
+         /*max-width: 1300px;*/
+         /*width: expression_r(Math.max(200, Math.min(1300, document.body.offsetWidth-40)) + "px");*/
          }
-      </style>
-      <style>
-         table {
-         font-family: cambria, calibri, garamond, century, gulim, dotum, arial;
-         border-collapse: collapse;
-         width: 100%;
-         font-size:18px;}
       </style>
       <style>
          /* The navigation bar */
          .navbar {
          overflow: hidden;
          background-color: #333;
-         position: fixed; /* Set the navbar to fixed position */
+         position: fixed;  /* Set the navbar to fixed position*/ 
          top: 0; /* Position the navbar at the top of the page */
-         width: 90%; /* Full width */
+         width: 90%;  /* Full width */
+         font-size: 1.5vmax;
          }
          /* Links inside the navbar */
          .navbar a {
@@ -42,17 +38,17 @@
          display: block;
          color: #f2f2f2;
          text-align: center;
-         padding: 10px 10px;
+         padding: 1vw 1vh;
          text-decoration: none;
          }
          /* Change background on mouse-over */
          .navbar a:hover {
-         background: #ddd;
-         color: black;
+         background: white;
+         color: #bb261a;
          }
          /* Main content */
          .main {
-         margin-top: 0px; /* Add a top margin to avoid content overlay */
+         margin-top: 3px; /* Add a top margin to avoid content overlay */
          }
       </style>
       <style>
@@ -67,7 +63,7 @@
       /* The alert message box */
       .alert {
       padding: 20px;
-      background-color: #eb7600; /* blue */
+      background-color: #bb261a; /* blue */
       color: white;
       margin-bottom: 15px;
       }
@@ -78,52 +74,60 @@
         padding: 40px;
       }
       </style>
+      <div class="navbar">
+         <a class="active" href="index.html">About</a>
+         <!-- <a href="#News">News</a> -->
+         <a href="publications.html">Publications</a>
+         <a href="teaching.html">Teaching</a>
+         <!-- <a href="#Talks">Talks</a> -->
+         <a href="service.html">Service</a>
+         <!-- <a href="#Bio">Biography</a> -->
+         <a href="supervision.html">Supervision</a>
+         <a href="enjoy_research.html">Enjoy Research</a>
+         <a href="files/CV.pdf">CV</a>
+         <!-- <a href="pages/blog.html">Blog</a> -->
+      </div>
       <p></p>
    </head>
-   <body background="../imgs/yellowbg.jpg">
-      <br> <br>
+   <!-- <img border="0" width=100% height="20" src="imgs/line.bmp"> -->
+   <body background="imgs/yellowbg.jpg">
+      <h2 style="padding-top: 3vmax;"></h2>
       <h1>A last-minute checklist for *Conference* paper submission
       </h1>
 
       <ol>
-		  <li>Ensure that the information (e.g., title, authors, abstract) in the submission systems (like HotCRP & EasyChair) matches the infomation in the paper.</li>
-		  <li>Is the title good enough?</li>
-		  <li>Search common reference errors/typos in pdf file, like "??", "[?]", "..", double space, etc.</li>
-		  <li>Convert pdf to word format and run Grammarly.</li>
-		  <li>Check latex template if follow the submission requirement, for example, ACM conferences may require to use "\documentclass[sigconf,review,anonymous]{acmart}".</li>
-		  <li>Check if already added the link to the anonymized replication package.</li>
-		  <li>Double-check the topic of the paper in the system with your co-authors/mentor/supervisor.</li>
-		  <li>Double-check the co-authors' conflict-of-interests (COIs).</li>
-		  <li>Check the reference if it contains the right/latest version of all the citations, e.g., replace the Arxiv version with the accepted version if applicable.</li>
-		  <li>Check tense by following <a href="https://static1.squarespace.com/static/5f455f635c27d9245c08d8d3/t/5f710c752b388d20dacff3dd/1601244277474/Using_tenses_in_scientific_writing_Update_051112.pdf" target="_blank">Using tenses in scientific writing</a>.</li>
-		</ol>
+        <li>Ensure that the information (e.g., title, authors, abstract) in the submission systems (like HotCRP & EasyChair) matches the infomation in the paper.</li>
+        <li>Is the title good enough?</li>
+        <li>Search common reference errors/typos in pdf file, like "??", "[?]", "..", double space, etc.</li>
+        <li>Convert pdf to word format and run Grammarly.</li>
+        <li>Check latex template if follow the submission requirement, for example, ACM conferences may require to use "\documentclass[sigconf,review,anonymous]{acmart}".</li>
+        <li>Check if already added the link to the anonymized replication package.</li>
+        <li>Double-check the topic of the paper in the system with your co-authors/mentor/supervisor.</li>
+        <li>Double-check the co-authors' conflict-of-interests (COIs).</li>
+        <li>Check the reference if it contains the right/latest version of all the citations, e.g., replace the Arxiv version with the accepted version if applicable.</li>
+        <li>Check tense by following <a href="https://static1.squarespace.com/static/5f455f635c27d9245c08d8d3/t/5f710c752b388d20dacff3dd/1601244277474/Using_tenses_in_scientific_writing_Update_051112.pdf" target="_blank">Using tenses in scientific writing</a>.</li>
+      </ol>
 
 
-		<h1>A last-minute checklist for *Journal* paper submission</h1>
+      <h1>A last-minute checklist for *Journal* paper submission</h1>
 
       <ol>
-		  <li>Double check the table/fig/equation/etc numbers mentioned in the response are synced with the original paper.</li>
-		  <li>Index all the comments in the letter to be clear and easy to follow for the editor and reviewers.</li>
-		  <li>For the response to the meta-review, provide a mention of the reviewer comments that are related to it, e.g., <em>(Please also see the response to Comment R1.X, R2.Y, etc.)</em> So that the reviewers can easily cross reference if he/she wants to.</li>
-		  <li>Standardise the formatting in the response letter to be uniform.</li>
-		  <li>Ensure that the cover letter appears BEFORE the paper in the Proof file when you submit it.</li>
-		  <li>Recommend AE.</li>
-		  <li>Back up the Proof file.</li>
-	</ol>
+        <li>Double check the table/fig/equation/etc numbers mentioned in the response are synced with the original paper.</li>
+        <li>Index all the comments in the letter to be clear and easy to follow for the editor and reviewers.</li>
+        <li>For the response to the meta-review, provide a mention of the reviewer comments that are related to it, e.g., <em>(Please also see the response to Comment R1.X, R2.Y, etc.)</em> So that the reviewers can easily cross reference if he/she wants to.</li>
+        <li>Standardise the formatting in the response letter to be uniform.</li>
+        <li>Ensure that the cover letter appears BEFORE the paper in the Proof file when you submit it.</li>
+        <li>Recommend AE.</li>
+        <li>Back up the Proof file.</li>
+   </ol>
 
-		<br>
-		Good luck! &#129310;
+      <br>
+      Good luck! &#129310;
 
-		<br>
-		<br>
-		<br>
+      <br>
+      <br>
+      <br>
 
-		Lastest update on 26 September, 2022.
-
-
-       <p style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;"><a href="enjoy_research.html">[Back]</a>  <a href="index.html">[Back to Homepage]</a>  </p>
-      
-      
-
+      Lastest update on 26 September, 2022.
    </body>
 </html>
