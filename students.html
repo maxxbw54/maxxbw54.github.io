@@ -4,7 +4,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <link rel="icon" href="photos/ncsu-logo.svg.png">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Bowen Xu</title>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       <style type="text/css">
@@ -22,6 +22,25 @@
          /*max-width: 1300px;*/
          /*width: expression_r(Math.max(200, Math.min(1300, document.body.offsetWidth-40)) + "px");*/
          }
+      </style>
+      <style type="text/css">
+         .image-row {
+           display: flex;
+           justify-content: left;
+           align-items: left;
+         }
+
+         .image-text-container {
+           margin: 10px; /* Adjust the space between images */
+/*           text-align: center;*/
+         }
+
+         img {
+/*           max-width: 100%;*/
+/*           height: auto;*/
+           display: block; /* This ensures the image does not exceed its container */
+         }
+
       </style>
       <style>
          /* The navigation bar */
@@ -93,37 +112,45 @@
          <p></p>
          At NCSU, I am fortunate to mentor/collaborate the following students.
          <br><br>
-         Current Master students:
-         <ul>
-            <li>
-               <img src="photos/firasat.jpg" width="100" height="100"><br>
-               <a href="https://www.linkedin.com/in/mohammed-firasat-hussain/">Firasat Hussain Mohammed</a> (seeking summer internship)
-            </li>
-            <li>
-               <img src="photos/pankaj.jpg" width="100" height="100"><br>
-               <a href="https://www.linkedin.com/in/pankajthakur62/">Pankaj Manoharlal Thakur</a> (seeking summer internship)
-            </li>
-            <li>
-               <img src="photos/deep.jpg" width="100" height="100"><br>
-               <a href="https://deepmehta.co.in/">Deep Mehta</a> (on the market)
-            </li>
-            <li>
-               <img src="photos/Subodh_Photo.png" width="100" height="100"><br>
-               <a href="https://www.linkedin.com/in/subodh-gujar">Subodh Suryakant Gujar</a> (on the market)
-            </li>
-            <li>
-               <img src="photos/Prabhanjan.jpg" width="100" height="100"><br>
-               <a href="https://www.linkedin.com/in/prabhanjanvb">Prabhanjan Vinoda Bharadwaj</a> (seeking summer internship)
-            </li>
-         </ul>
+
+
+         Current Master students:<br>
+
+
+            <div class="image-row">
+                 <div class="image-text-container">
+                  <img src="photos/firasat.jpg" width="200" height="200" alt="First Image">
+                  <a href="https://www.linkedin.com/in/mohammed-firasat-hussain/">Firasat Hussain Mohammed</a> <br>(seeking summer internship)
+                  <img src="photos/deep.jpg" width="200" height="200" alt="First Image">
+                  <a href="https://deepmehta.co.in/">Deep Mehta</a> <br>(on the market)
+                  <img src="photos/Prabhanjan.jpg" width="200" height="200" alt="First Image">
+                  <a href="https://www.linkedin.com/in/prabhanjanvb">Prabhanjan Vinoda Bharadwaj</a> <br>(seeking summer internship)
+                </div>
+                <div class="image-text-container">
+                  <img src="photos/pankaj.jpg" width="200" height="200" alt="First Image">
+                  <a href="https://www.linkedin.com/in/pankajthakur62/">Pankaj Manoharlal Thakur</a> <br>(seeking summer internship)
+                  <img src="photos/Subodh_Photo.png" width="200" height="200" alt="First Image">
+                  <a href="https://www.linkedin.com/in/subodh-gujar">Subodh Suryakant Gujar</a> <br>(on the market)
+                </div>
+            </div>
+
+
          <br><br>
-         Current Undergraduate students:
-         <ul>
-            <li>
-               <img src="photos/mitchell.png" width="100" height="100"><br>
-               <a href="www.linkedin.com/in/mitchellhuggins">Mitchell Huggins</a>
-            </li>
-         </ul>
+         Current Undergraduate students:<br>
+            <div class="image-row">
+                 <div class="image-text-container">
+                  <img src="photos/mitchell.png" class="img-fluid" width="200" height="200" alt="First Image">
+                  <br>
+                  <a href="www.linkedin.com/in/mitchellhuggins">Mitchell Huggins</a>
+                </div>
+                <div class="image-text-container">
+                  <img src="photos/david.jpg" class="img-fluid" width="200" height="200" alt="First Image">
+                  <br>Yinuo Wang
+                </div>
+            </div>
+
       </div>
+
+
    </body>
 </html>
