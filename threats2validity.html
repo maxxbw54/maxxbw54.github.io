@@ -1,11 +1,11 @@
 <html>
    <head>
-      <!-- <link rel="icon" href="imgs/icon.png"> -->
+   	<!-- <link rel="icon" href="imgs/icon.png"> -->
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <link rel="icon" href="photos/ncsu-logo.svg.png">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <title>Enjoy Research</title>
+      <title>Threats to Validity</title>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       <style type="text/css">
          div.news {
@@ -88,18 +88,24 @@
    </head>
    <!-- <img border="0" width=100% height="20" src="imgs/line.bmp"> -->
    <body background="imgs/yellowbg.jpg">
-      <h2 style="padding-top: 3vmax;"></h2>
-      Doing research is fun which make me feel blessed I can spend my life to satisfy my curiosity (and also support my family). Besides research itself, I am also enjoying self-improving my skillset from many other related aspects, such as communication, knowledge about different cultures/races/history, etc.
-      <br><br>
-      Here, I summarize and actively maintain the following list of tips/tools for the ultimate goal, i.e., conduct better research. Hope they can inpire you a bit.
+      <div id="Service">
+         <h2 style="padding-top: 3vmax;"></h2>
 
-      <ol>
-        <li><a href="paper_submission_checklist.html">A last-minute checklist for research (conference and journal) paper submission</a></li>
-        <li><a href="https://github.com/maxxbw54/Paper-Repository">Paper Search Tool</a></li>
-        <li><a href="on-the-market-advice.html">A checklist (lessons I learned) if you are looking for a job during a conference</a></li>
-        <li><a href="https://docs.google.com/document/d/1m2yZtRVf1tze9n-XjoZZ09tJ1WOimwYLPICDXfBZSOk/edit?usp=sharing">An outline for kicking off a research project.</a></li>
-        <li> A paper repository about Large Lanugage Model for Software Engineering, <a href="https://github.com/gai4se/LLM4SE">https://github.com/gai4se/LLM4SE</a>. Please star the repository and contribute your work! </li>
-        <li><a href="threats2validity.html">Basics about How to write Threats to Validity Section</a></li>
-      </ol>
+         <h3>Basics about How to write Threats to Validity Section</h3>
+         <ul>
+            <li>Threats to <b>construct</b> validity are concerned with the relationship between theory and observation.<br>
+            <b>EXAMPLE</b>: You design some heuristics to build a dataset (e.g., for code reuse) and draw conclusion (about code reuse) on the dataset. But your heuristics may not cover all the code reuse scenarios. </li>
+            <li>Threats to <b>internal</b> validity are concerned with the factors that may affect a dependent variable and were not considered in the study.<br>
+            <b>EXAMPLE</b>: You consider a paper as a baseline, and the paper does not release its replication package. so you replicate/re-implement the baseline based on your understanding on the paper. </li>
+            <li>Threats to <b>conclusion</b> validity are concerned with the relationship between the treatment and the outcome.<br>
+            <b>EXAMPLE</b>: You conduct some manual labeling in your work. Does your manual label process can guarantee the correctness of all the cases?</li>
+            <li>Threats to <b>external</b> validity are concerned with the generalizability of our results.<br>
+            <b>EXAMPLE</b>: Your experiment is conducted in Java, are your findings/conclusions also hold in other PLs?</li>
+         </ul>
+
+         Another good way to learn how to write is to read the "Threats to Validity" section of the related works. <br>
+         Please do <b>NOT</b> use "internal threat" to refer to "Threats to internal validity". It's simply <b>WRONG</b>. 
+
+      </div>
    </body>
 </html>
