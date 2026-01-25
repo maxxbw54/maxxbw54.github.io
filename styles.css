@@ -1,0 +1,197 @@
+/* Shared styles for Bowen Xu's homepage - responsive & accessible */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Skip to main content - for keyboard/screen reader users */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #bb261a;
+  color: white;
+  padding: 0.75rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Cambria, Calibri, Garamond, "Century Gothic", Gulim, Dotum, Arial, sans-serif;
+  font-size: clamp(1rem, 1.3vmax, 1.25rem);
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  padding-top: 4rem; /* Space for fixed navbar */
+  background-image: url(imgs/yellowbg.jpg);
+  background-attachment: scroll;
+}
+
+/* Image container - about section */
+.imgparent {
+  max-width: 40%;
+  flex-shrink: 0;
+}
+.imgparent img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation */
+.navbar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  font-size: clamp(0.9rem, 1.5vmax, 1.1rem);
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 50;
+  box-sizing: border-box;
+}
+.navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  min-width: max-content;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.navbar a:hover,
+.navbar a:focus-visible {
+  background: white;
+  color: #bb261a;
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.main {
+  margin-top: 3px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.column {
+  flex: 1 1 100%;
+  padding: 1.5rem;
+}
+
+.alert {
+  padding: 1rem 1.25rem;
+  background-color: #bb261a;
+  color: white;
+  margin-bottom: 15px;
+}
+.alert a {
+  color: white;
+  text-decoration: underline;
+}
+.alert a:hover,
+.alert a:focus-visible {
+  text-decoration: none;
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.news {
+  height: auto;
+  max-height: 500px;
+  overflow: auto;
+}
+.news-icon {
+  vertical-align: middle;
+  margin-right: 0.25rem;
+}
+
+/* Responsive: tablet and below */
+@media (max-width: 768px) {
+  body {
+    width: 95%;
+    padding-top: 1rem;
+  }
+
+  .navbar {
+    width: 95%;
+    padding: 0;
+  }
+  .navbar a {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imgparent {
+    max-width: 100%;
+  }
+  .imgparent img {
+    max-width: 240px;
+  }
+
+  .column {
+    padding: 1rem;
+  }
+
+  .news {
+    max-height: none;
+  }
+}
+
+/* Responsive: small phones */
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .navbar {
+    width: 100%;
+    left: 0;
+    transform: none;
+    justify-content: flex-start;
+  }
+  .navbar a {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .alert {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .skip-link {
+    transition: none;
+  }
+}

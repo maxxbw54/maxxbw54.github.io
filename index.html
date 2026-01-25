@@ -1,86 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
    <head>
-   	<!-- <link rel="icon" href="imgs/icon.png"> -->
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <link rel="icon" href="photos/ncsu-logo.svg.png">
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" href="photos/ncsu-logo.svg.png">
       <title>Bowen Xu</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-      <style type="text/css">
-         div.news {
-                height: 500px;
-                overflow: auto;
-            }
-         body {
-         font-family: cambria, calibri, garamond, century, gulim, dotum, arial;
-         font-size: 1.3vmax;
-         margin: 0 auto;
-         width: 90%;
-         padding-top:30px;
-         }
-      </style>
-      <style>
-         /* image double max-width*/
-         .imgparent {
-             max-width: 40%;
-         }
-         .imgparent img{
-            max-width: 300px;
-            width: 100%;
-         }
-         /* The navigation bar */
-         .navbar {
-         overflow: hidden;
-         background-color: #333;
-         position: fixed;  /* Set the navbar to fixed position*/ 
-         top: 0; /* Position the navbar at the top of the page */
-         width: 90%;  /* Full width */
-         font-size: 1.5vmax;
-         }
-         /* Links inside the navbar */
-         .navbar a {
-         float: left;
-         display: block;
-         color: #f2f2f2;
-         text-align: center;
-         padding: 1vw 1vh;
-         text-decoration: none;
-         }
-         /* Change background on mouse-over */
-         .navbar a:hover {
-         background: white;
-         color: #bb261a;
-         }
-         /* Main content */
-         .main {
-         margin-top: 3px; /* Add a top margin to avoid content overlay */
-         }
-      </style>
-      <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      .row {
-        display: flex;
-      }
-
-      /* The alert message box */
-      .alert {
-      padding: 20px;
-      background-color: #bb261a; /* blue */
-      color: white;
-      margin-bottom: 15px;
-      }
-
-      /* Create two equal columns that sits next to each other */
-      .column {
-        flex: 100%;
-        padding: 40px;
-      }
-      </style>
-      <div class="navbar">
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+      <nav class="navbar" role="navigation" aria-label="Main">
          <a class="active" href="index.html">About</a>
          <a href="publications.html">Publications</a>
          <a href="teaching.html">Teaching</a>
@@ -88,16 +19,13 @@
          <a href="talk.html">Talk</a>
          <a href="students.html">Students</a>
          <a href="enjoy_research.html">Enjoy Research</a>
-      </div>
-      <p></p>
-   </head>
-   <!-- <img border="0" width=100% height="20" src="imgs/line.bmp"> -->
-   <body background="imgs/yellowbg.jpg">
+      </nav>
+      <main id="main-content">
       <div id="About">
       	<h2 style="padding-top: 3vmax;"></h2>
          <div class="row">
             <div class="imgparent">
-             <img src="photos/me.png" border="0"><br>
+             <img src="photos/me.png" alt="Photo of Bowen Xu"><br>
              [<a href = "photos/prof-me.png">Official Photo</a>]<br>
              [<a href = "https://www.csc.ncsu.edu/people/bxu22">Official Page</a>]
             </div>
@@ -109,7 +37,7 @@
                <br> <a href = "https://ncsu.software/">Software Engineering Group at NCSU</a>
                 <br> <a href = "https://www.csc.ncsu.edu">Department of Computer Science</a>
                 <br> <a href = "https://www.engr.ncsu.edu/">College of Engineering</a><br> <br>
-                <img src="photos/ncsu.png" border="0"> <br>
+                <img src="photos/ncsu.png" alt="NC State University logo"><br>
                 <br>
                 Office: Engineering Building II (EB2), Room 3228<br>
                 Email: <a href = "mailto:bxu22@ncsu.edu">bxu22@ncsu.edu</a><br/>
@@ -120,7 +48,7 @@
 
       <div id="notification">
          <div class="alert">
-            <i class="fa fa-fire" style="font-size:24px"></i> My team has developed a framework named <a href="https://arxiv.org/pdf/2505.12185" style="color: white">Evaloop</a> to fairly assess LLMs' robustness for programming. Based on this, we are actively mainteining a leaderboard with the results on more than 100 LLMs. Check it out at <a href="https://evalooop.github.io/" style="color: white">https://evalooop.github.io</a>!
+            <i class="fa fa-fire" style="font-size:24px" aria-hidden="true"></i> My team has developed a framework named <a href="https://arxiv.org/pdf/2505.12185">Evaloop</a> to fairly assess LLMs' robustness for programming. Based on this, we are actively maintaining a leaderboard with the results on more than 100 LLMs. Check it out at <a href="https://evalooop.github.io/">https://evalooop.github.io</a>!
             <!-- <i class="fa fa-graduation-cap" style="font-size:24px"></i> I am actively looking for Ph.D./M.S./UG students on AI and Software Engineering research. Interested? <a href = "mailto:bxu22@ncsu.edu" style="color: white">Drop me an email (with your CV).</a>
             <br> -->
             <!-- <i class="fa fa-shield-alt" style="font-size:24px"></i> I am developing an open-source library named <a href="https://seedguard.ai" style="color: white">SEEDGuard.AI</a> with a group of talented students at NC State for building trustworthy data for code. Interested? <a href = "mailto:bxu22@ncsu.edu" style="color: white">Join us!</a> -->
@@ -149,7 +77,7 @@
                            <li> Backdoor Attack in Reinforcement Learning System<a href="https://www.computer.org/csdl/proceedings-article/sp/2024/313000a218/1WPcYJ8kPNm">[S&P-24]</a></li>
                            <li> Backporting in Robot Operating System <a href="">[Forge 2026]</a></li>
                         </ul>
-                        <li>Understand and Assist Developers' Activities (<b>Huamn-centered layer</b>)</li>
+                        <li>Understand and Assist Developers' Activities (<b>Human-centered layer</b>)</li>
                         <ul>
                            <li>Developer-AI Interaction/Collaboration <a href="https://arxiv.org/abs/2504.04553">[ICPC-26]</a></li>
                            <li>Code Reuse and Re-implementation <a href="publications/EMSE2019.pdf">[EMSE-19]</a></li>
@@ -163,55 +91,55 @@
          <h2>News</h2>
          <div class="news">
          <ul>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">January, 2026: One work titled <em>Backporting in Robot Operating System: Identifying Commit Purpose and Propagation Need with Large Language Models</em> is accepted by the 3rd ACM International Conference on AI Foundation Models and Software Engineering (FORGE 2026). Congrats Pankaj and Kyle!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">December, 2025: One work titled <em>Understanding Codebase like a Professional! Human-AI Collaboration for Code Comprehension</em> is accepted by the 34st IEEE/ACM International Conference on Program Comprehension (ICPC 2026).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">December, 2025: One work titled <em>How Do Semantically Equivalent Code Transformations Impact Membership Inference on LLMs for Code?</em> is accepted by Research Track of International Conference on Software Engineering (ICSE 2026). Congrats Hua and Nazmul!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">September, 2025: One work titled <em>How Quantization Impacts Privacy Risk on LLMs for Code?</em> is accepted by Main Track of 2nd ACM International Conference on AI-powered Software (AIware 2025). Congrats Nazmul and Hua!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">August, 2025: One work titled <em>Stealthy Backdoor Attack for Code Models</em> was accepted by Transactions on Software Engineering wins the Best Paper Award of the year 2024. Yay! <a href="https://www.computer.org/publications/best-paper-award-winners">Announcement</a><br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">July, 2025: One work titled <em>Learning From the Best: What Makes Popular Hugging Face Models? A Registered Report</em> is accepted by Registered Report Track of International Conference on Software Maintenance and Evolution (ICSME). Congrats Yinan!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">June, 2025: Two works titled <em>Quantization Is Not a Dealbreaker: Empirical Insights from Large Code Models</em> and <em>APIDocBooster: An Extract-Then-Abstract Framework Leveraging Large Language Models for Augmenting API Documentation</em> are accepted by International Conference on Software Maintenance and Evolution (ICSME).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">May, 2025: I gave a talk titled <em>How Program Analysis and AI Can Better Support Domain-Specific Software Development and Maintenance?</em> at SAS Institute. It's fun!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">April, 2025: One work titled <em>A Comprehensive Study of OOP-Related Bugs in C++ Compilers</em> is accepted by IEEE Transactions on Software Engineering (TSE).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">March, 2025: I start to serve as a member of Editorial Board for one of my favorite journals <a href = "https://www.springer.com/journal/10664" style="color: black">Empirical Software Engineering Journal (aka. EMSE)</a>. Please consider submitting your work to EMSE!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">Jan, 2025: My application on <em>Safe Use of AI for Coding</em> to OpenAI Researcher Access Program is awarded.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">Jan, 2025: One work titled <em>Finding Safety Violations of AI-Enabled Control Systems through the Lens of Synthesized Proxy Programs</em> is accepted by ACM Transactions on Software Engineering and Methodology (TOSEM).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">November, 2024: One work titled <em>PTM4Tag+: Tag recommendation of stack overflow posts with pre-trained models</em> is accepted by Empirical Software Engineering (EMSE).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">October, 2024: One work titled <em>Prioritizing Speech Test Cases</em> is accepted by ACM Transactions on Software Engineering and Methodology (TOSEM).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">October, 2024: I will serve Forge 2025 as a co-chair of <a href = "https://conf.researchr.org/track/forge-2025/forge-2025-benchmarking" style="color: black">Benchmarking Track</a>. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">October, 2024: One work titled <em>An empirical study on the effectiveness of large language models for SATD identification and classification</em> is accepted by Empirical Software Engineering (EMSE).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">August, 2024: I gave a talk titled <em>Systematic Code Migration</em> at Amazon AWS.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">August, 2024: One work titled <em>Leveraging Large Language Model for Automatic Patch Correctness Assessment</em> is accepted by Transactions on Software Engineering (TSE).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">March, 2024: One work titled <em>BAFFLE: Backdoor Attack in Offline Reinforcement Learning</em> is accepted by IEEE Symposium on Security and Privacy (S&P 2024).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">Feb, 2024: One work titled <em>Stealthy Backdoor Attack for Code Models</em> is accepted by IEEE Transactions on Software Engineering (TSE).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">December, 2023: Two works titled <em>Out of Sight, Out of Mind: Better Automatic Vulnerability Repair by Broadening Input Ranges and Sources</em> and <em>Curiosity-Driven Testing for Sequential Decision-Making Process</em> are accepted by 46th International Conference on Software Engineering (ICSE 2024).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">December, 2023: One work titled <em>Greening Large Language Models of Code</em> is accepted by The 46th International Conference on Software Engineering (ICSE 2024) -- Software Engineering in Society Track (ICSE 2024 SEIS).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">November, 2023: I will serve ICSE 2025 as a Review Process Co-chair of <a href = "https://conf.researchr.org/track/icse-2025/icse-2025-research-track" style="color: black">Research Track</a>. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">November, 2023: I will serve ASE 2024 as a PC of <a href = "https://conf.researchr.org/track/ase-2024/ase-2024-research" style="color: black">Research Track</a>. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">November, 2023: I will serve <a href = "https://conf.researchr.org/track/forge-2024/forge-2024-papers#Call-for-Papers" style="color: black">Forge 2024</a> (co-located with ICSE 2024) as a Local Chair. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">October, 2023: One work titled <em>Representation Learning for Stack Overflow Posts: How Far are We?</em> is accepted by ACM Transactions on Software Engineering and Methodology (TOSEM).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">September, 2023: I will serve CAIN 2024 as a PC of <a href = "https://conf.researchr.org/track/cain-2024/cain-2024-call-for-papers" style="color: black">Technical Track</a>. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">July, 2023: I will serve FSE 2024 as a PC of <a href = "https://conf.researchr.org/track/fse-2024/fse-2024-research-papers" style="color: black">Technical Track</a>. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">July, 2023: One work titled <em>The Devil is in the Tails: An Exploratory Study on Long-tailed</em> (Technical track) is accepted by ASE'23.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">July, 2023: One work titled <em>Are We Ready to Embrace Generative AI for Software Q&A?</em> (NIER track) is accepted by ASE'23.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">June, 2023: One work titled <em>Self-Supervised Code Change Representation Learning</em> (Technical track) is accepted by ICSME'23.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">June, 2023: I contribute to one chapter <em>Supporting Collateral Evolution in Software Ecosystems</em> of the book titled <em>Software Ecosystems: Tooling and Analytics</em>. The book is planned for release end of Augest 2023.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">May, 2023: One work titled <em>Multi-Granularity Detector for Vulnerability Fixes</em> is accepted by IEEE Transactions on Software Engineering (TSE).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">April, 2023: I will serve ASE 2023 as a PC of <a href = "https://conf.researchr.org/track/ase-2023/ase-2023-nier-track" style="color: black">NIER Track</a>. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">April, 2023: I will serve APSEC 2023 as a PC of <a href = "https://conf.researchr.org/track/apsec-2023/apsec-2023-technical-track" style="color: black">Technical Track</a>. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">March, 2023: I will serve PRDC 2023 as a PC of <a href = "https://prdc.dependability.org/PRDC2023/cfp.html" style="color: black">Technical Track</a>. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">March, 2023: I will serve ICSE 2024 as a PC of <a href = "https://conf.researchr.org/track/icse-2024/icse-2024-demonstrations" style="color: black">Demonstrations Track</a>. Please consider submitting your work!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">March, 2023: I delivered a lecture as a guest instructor on code embedding for the graduate students from Dalhousie University.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">March, 2023: One work titled <em>Generation-based Code Review Automation: How Far Are We?</em> is accepted to appear at the Research track of the 31st IEEE/ACM International Conference on Program Comprehension (ICPC 2023).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">January, 2023: One work titled <em>TECHSUMBOT: A Stack Overflow Answer Summarization Tool for Technical Query</em> is accepted to appear at the Demostractions track of the 45th IEEE/ACM International Conference on Software Engineering (ICSE 2023).<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">December, 2022: One work titled <em>Curiosity-Driven and Victim-Aware Adversarial Policies</em> is accepted by The Annual Computer Security Applications Conference and won Honorable Mention Award.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">November, 2022: One work titled <em>Duplicate Bug Report Detection: How Far Are We?</em> is accepted by ACM Transactions on Software Engineering and Methodology.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">July, 2022: Two works titled <em> Compressing Pre-trained Models of Code into 3 MB</em> and <em> Answer Summarization for Technical Queries: Benchmark and New Approach </em> (Technical track) are accepted by ASE'22.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">June, 2022: One work titled <em> How to Better Utilize Code Graphs in Semantic Code Search?</em> (Technical track) is accepted by ESEC/FSE'22.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">June, 2022: <a href="https://maltesque2022.github.io/submission.html">[Call For Paper]</a> I am one of the organizers of the ESEC/FSE workshop <a href="https://maltesque2022.github.io">the 6th edition of the MaLTeSQuE</a> on machine learning techniques for software quality evolution. Please submit your great work(s)!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">March, 2022: One work titled <em> PTM4Tag: Sharpening Tag Recommendation of Stack Overflow with Pre-trained Models</em> (Technical track) is accepted by ICPC'22.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">December, 2021: Two works titled <em>Aspect-Based API Review Classification: How Far Can Pre-Trained Transformer Model Go?</em> (Technical track) and <em>Can Identifier Splitting Improve Open-Vocabulary Language Model of Code?</em> (ERA track) are accepted by SANER'22.<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">August, 2021: I graduated from SMU, a beautiful university carries lots of great memories!<br>
-         <img src="imgs/news.png" height=20 width=40 border="0"  align="center">June, 2021: One work titled <em>Post2Vec: Learning Distributed Representations of Stack Overflow Posts</em> is accepted by IEEE Transactions on Software Engineering (TSE).
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">January, 2026: One work titled <em>Backporting in Robot Operating System: Identifying Commit Purpose and Propagation Need with Large Language Models</em> is accepted by the 3rd ACM International Conference on AI Foundation Models and Software Engineering (FORGE 2026). Congrats Pankaj and Kyle!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">December, 2025: One work titled <em>Understanding Codebase like a Professional! Human-AI Collaboration for Code Comprehension</em> is accepted by the 34st IEEE/ACM International Conference on Program Comprehension (ICPC 2026).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">December, 2025: One work titled <em>How Do Semantically Equivalent Code Transformations Impact Membership Inference on LLMs for Code?</em> is accepted by Research Track of International Conference on Software Engineering (ICSE 2026). Congrats Hua and Nazmul!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">September, 2025: One work titled <em>How Quantization Impacts Privacy Risk on LLMs for Code?</em> is accepted by Main Track of 2nd ACM International Conference on AI-powered Software (AIware 2025). Congrats Nazmul and Hua!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">August, 2025: One work titled <em>Stealthy Backdoor Attack for Code Models</em> was accepted by Transactions on Software Engineering wins the Best Paper Award of the year 2024. Yay! <a href="https://www.computer.org/publications/best-paper-award-winners">Announcement</a><br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">July, 2025: One work titled <em>Learning From the Best: What Makes Popular Hugging Face Models? A Registered Report</em> is accepted by Registered Report Track of International Conference on Software Maintenance and Evolution (ICSME). Congrats Yinan!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">June, 2025: Two works titled <em>Quantization Is Not a Dealbreaker: Empirical Insights from Large Code Models</em> and <em>APIDocBooster: An Extract-Then-Abstract Framework Leveraging Large Language Models for Augmenting API Documentation</em> are accepted by International Conference on Software Maintenance and Evolution (ICSME).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">May, 2025: I gave a talk titled <em>How Program Analysis and AI Can Better Support Domain-Specific Software Development and Maintenance?</em> at SAS Institute. It's fun!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">April, 2025: One work titled <em>A Comprehensive Study of OOP-Related Bugs in C++ Compilers</em> is accepted by IEEE Transactions on Software Engineering (TSE).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">March, 2025: I start to serve as a member of Editorial Board for one of my favorite journals <a href = "https://www.springer.com/journal/10664" style="color: black">Empirical Software Engineering Journal (aka. EMSE)</a>. Please consider submitting your work to EMSE!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">Jan, 2025: My application on <em>Safe Use of AI for Coding</em> to OpenAI Researcher Access Program is awarded.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">Jan, 2025: One work titled <em>Finding Safety Violations of AI-Enabled Control Systems through the Lens of Synthesized Proxy Programs</em> is accepted by ACM Transactions on Software Engineering and Methodology (TOSEM).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">November, 2024: One work titled <em>PTM4Tag+: Tag recommendation of stack overflow posts with pre-trained models</em> is accepted by Empirical Software Engineering (EMSE).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">October, 2024: One work titled <em>Prioritizing Speech Test Cases</em> is accepted by ACM Transactions on Software Engineering and Methodology (TOSEM).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">October, 2024: I will serve Forge 2025 as a co-chair of <a href = "https://conf.researchr.org/track/forge-2025/forge-2025-benchmarking" style="color: black">Benchmarking Track</a>. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">October, 2024: One work titled <em>An empirical study on the effectiveness of large language models for SATD identification and classification</em> is accepted by Empirical Software Engineering (EMSE).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">August, 2024: I gave a talk titled <em>Systematic Code Migration</em> at Amazon AWS.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">August, 2024: One work titled <em>Leveraging Large Language Model for Automatic Patch Correctness Assessment</em> is accepted by Transactions on Software Engineering (TSE).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">March, 2024: One work titled <em>BAFFLE: Backdoor Attack in Offline Reinforcement Learning</em> is accepted by IEEE Symposium on Security and Privacy (S&P 2024).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">Feb, 2024: One work titled <em>Stealthy Backdoor Attack for Code Models</em> is accepted by IEEE Transactions on Software Engineering (TSE).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">December, 2023: Two works titled <em>Out of Sight, Out of Mind: Better Automatic Vulnerability Repair by Broadening Input Ranges and Sources</em> and <em>Curiosity-Driven Testing for Sequential Decision-Making Process</em> are accepted by 46th International Conference on Software Engineering (ICSE 2024).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">December, 2023: One work titled <em>Greening Large Language Models of Code</em> is accepted by The 46th International Conference on Software Engineering (ICSE 2024) -- Software Engineering in Society Track (ICSE 2024 SEIS).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">November, 2023: I will serve ICSE 2025 as a Review Process Co-chair of <a href = "https://conf.researchr.org/track/icse-2025/icse-2025-research-track" style="color: black">Research Track</a>. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">November, 2023: I will serve ASE 2024 as a PC of <a href = "https://conf.researchr.org/track/ase-2024/ase-2024-research" style="color: black">Research Track</a>. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">November, 2023: I will serve <a href = "https://conf.researchr.org/track/forge-2024/forge-2024-papers#Call-for-Papers" style="color: black">Forge 2024</a> (co-located with ICSE 2024) as a Local Chair. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">October, 2023: One work titled <em>Representation Learning for Stack Overflow Posts: How Far are We?</em> is accepted by ACM Transactions on Software Engineering and Methodology (TOSEM).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">September, 2023: I will serve CAIN 2024 as a PC of <a href = "https://conf.researchr.org/track/cain-2024/cain-2024-call-for-papers" style="color: black">Technical Track</a>. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">July, 2023: I will serve FSE 2024 as a PC of <a href = "https://conf.researchr.org/track/fse-2024/fse-2024-research-papers" style="color: black">Technical Track</a>. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">July, 2023: One work titled <em>The Devil is in the Tails: An Exploratory Study on Long-tailed</em> (Technical track) is accepted by ASE'23.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">July, 2023: One work titled <em>Are We Ready to Embrace Generative AI for Software Q&A?</em> (NIER track) is accepted by ASE'23.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">June, 2023: One work titled <em>Self-Supervised Code Change Representation Learning</em> (Technical track) is accepted by ICSME'23.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">June, 2023: I contribute to one chapter <em>Supporting Collateral Evolution in Software Ecosystems</em> of the book titled <em>Software Ecosystems: Tooling and Analytics</em>. The book is planned for release end of Augest 2023.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">May, 2023: One work titled <em>Multi-Granularity Detector for Vulnerability Fixes</em> is accepted by IEEE Transactions on Software Engineering (TSE).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">April, 2023: I will serve ASE 2023 as a PC of <a href = "https://conf.researchr.org/track/ase-2023/ase-2023-nier-track" style="color: black">NIER Track</a>. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">April, 2023: I will serve APSEC 2023 as a PC of <a href = "https://conf.researchr.org/track/apsec-2023/apsec-2023-technical-track" style="color: black">Technical Track</a>. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">March, 2023: I will serve PRDC 2023 as a PC of <a href = "https://prdc.dependability.org/PRDC2023/cfp.html" style="color: black">Technical Track</a>. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">March, 2023: I will serve ICSE 2024 as a PC of <a href = "https://conf.researchr.org/track/icse-2024/icse-2024-demonstrations" style="color: black">Demonstrations Track</a>. Please consider submitting your work!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">March, 2023: I delivered a lecture as a guest instructor on code embedding for the graduate students from Dalhousie University.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">March, 2023: One work titled <em>Generation-based Code Review Automation: How Far Are We?</em> is accepted to appear at the Research track of the 31st IEEE/ACM International Conference on Program Comprehension (ICPC 2023).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">January, 2023: One work titled <em>TECHSUMBOT: A Stack Overflow Answer Summarization Tool for Technical Query</em> is accepted to appear at the Demostractions track of the 45th IEEE/ACM International Conference on Software Engineering (ICSE 2023).<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">December, 2022: One work titled <em>Curiosity-Driven and Victim-Aware Adversarial Policies</em> is accepted by The Annual Computer Security Applications Conference and won Honorable Mention Award.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">November, 2022: One work titled <em>Duplicate Bug Report Detection: How Far Are We?</em> is accepted by ACM Transactions on Software Engineering and Methodology.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">July, 2022: Two works titled <em> Compressing Pre-trained Models of Code into 3 MB</em> and <em> Answer Summarization for Technical Queries: Benchmark and New Approach </em> (Technical track) are accepted by ASE'22.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">June, 2022: One work titled <em> How to Better Utilize Code Graphs in Semantic Code Search?</em> (Technical track) is accepted by ESEC/FSE'22.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">June, 2022: <a href="https://maltesque2022.github.io/submission.html">[Call For Paper]</a> I am one of the organizers of the ESEC/FSE workshop <a href="https://maltesque2022.github.io">the 6th edition of the MaLTeSQuE</a> on machine learning techniques for software quality evolution. Please submit your great work(s)!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">March, 2022: One work titled <em> PTM4Tag: Sharpening Tag Recommendation of Stack Overflow with Pre-trained Models</em> (Technical track) is accepted by ICPC'22.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">December, 2021: Two works titled <em>Aspect-Based API Review Classification: How Far Can Pre-Trained Transformer Model Go?</em> (Technical track) and <em>Can Identifier Splitting Improve Open-Vocabulary Language Model of Code?</em> (ERA track) are accepted by SANER'22.<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">August, 2021: I graduated from SMU, a beautiful university carries lots of great memories!<br>
+         <img src="imgs/news.png" alt="" width="40" height="20" class="news-icon">June, 2021: One work titled <em>Post2Vec: Learning Distributed Representations of Stack Overflow Posts</em> is accepted by IEEE Transactions on Software Engineering (TSE).
          </ul>
       </div>
       <br><br>
@@ -219,6 +147,7 @@
       	<h2>Bio</h2>
       	<p>Dr. Bowen Xu is a (tenure-track) Assistant Professor in the Department of Computer Science at North Carolina State University (NC State). He received his PhD degree from School of Computing and Information Systems (SCIS) at Singapore Management University (SMU). His research interests lie primarily in the fields of machine learning and software engineering. Recently, he has focused on securing AI models for various software engineering tasks. His works won several research paper awards, such as 2024 Best Paper Award at IEEE Transactions on Software Engineering (TSE) journal, the Highly Commended Full Paper Award at ESEM 2018, the Honorable Mention Award at ACSAC 2022, nominated for ACM SIGSOFT Distinguished Paper Award at ASE 2022. He co-organized two FSE workshops SEA4DQ in 2024 and MaLTeS in 2022. He served as associate editor for EMSE journal. He is also invited to be a PC and referee for many top-tier conferences and Journals, such as ICSE, FSE, ASE, TSE, TOSEM, EMSE, etc. Contact him at: <a href = "mailto:bxu22@ncsu.edu">bxu22@ncsu.edu</a>. More info at: <a href = "https://www.bowenxu.me">https://www.bowenxu.me</a>.</p>
       </div>
-      <img src="photos/nc-state.png" border="0"> <br> <br>
+      <img src="photos/nc-state.png" alt="NC State campus"><br><br>
+      </main>
    </body>
 </html>
