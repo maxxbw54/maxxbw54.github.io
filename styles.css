@@ -128,10 +128,14 @@ body {
 @media (max-width: 768px) {
   body {
     width: 95%;
-    padding-top: 1rem;
+    padding-top: 0;
   }
 
   .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    transform: none;
     width: 95%;
     padding: 0;
   }
