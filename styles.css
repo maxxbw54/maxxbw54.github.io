@@ -188,6 +188,86 @@ body {
   margin-bottom: 0.35rem;
 }
 
+/* Teaching: course cards and lists */
+.teach-heading {
+  border-bottom: 2px solid #bb261a;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #ddd;
+  border-top: 4px solid #bb261a;
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+}
+.course-card h4 {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.3;
+}
+.course-meta,
+.course-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.course-code,
+.course-level,
+.course-terms span {
+  font-size: 0.78em;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+}
+.course-code {
+  background: #333;
+  color: white;
+}
+.course-level {
+  border: 1px solid #333;
+  color: #333;
+}
+.course-terms span {
+  background: #f4e1df;
+  color: #8a1c13;
+}
+.course-card .course-link {
+  margin-top: auto;
+}
+.course-link {
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+.teach-list {
+  list-style: none;
+  padding-left: 0;
+}
+.teach-list > li {
+  background: rgba(255, 255, 255, 0.75);
+  border-left: 4px solid #333;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}
+.teach-list > li .course-link {
+  margin-left: 0.5rem;
+}
+.teach-sub {
+  color: #555;
+  font-size: 0.92em;
+}
+.teach-list ul {
+  margin: 0.4rem 0 0;
+}
+
 /* Responsive: tablet and below */
 @media (max-width: 768px) {
   body {
