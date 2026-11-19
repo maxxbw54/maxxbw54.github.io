@@ -267,6 +267,26 @@ body {
 .teach-list ul {
   margin: 0.4rem 0 0;
 }
+.teach-ack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+}
+.teach-ack img {
+  display: block;
+  height: 36px;
+  width: auto;
+}
+.teach-ack p {
+  flex: 1 1 280px;
+  margin: 0;
+}
 
 /* Responsive: tablet and below */
 @media (max-width: 768px) {
