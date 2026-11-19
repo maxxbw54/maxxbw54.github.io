@@ -267,7 +267,7 @@ body {
 .teach-list ul {
   margin: 0.4rem 0 0;
 }
-.teach-ack {
+.ack {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -278,12 +278,29 @@ body {
   padding: 1rem 1.25rem;
   margin-bottom: 2rem;
 }
-.teach-ack img {
+.ack img {
   display: block;
   height: 36px;
   width: auto;
 }
-.teach-ack p {
+.ack-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.ack-logos a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #111;
+  font-size: 1.35em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.ack-logos img {
+  height: 30px;
+}
+.ack p {
   flex: 1 1 280px;
   margin: 0;
 }
