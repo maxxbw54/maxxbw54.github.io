@@ -124,6 +124,21 @@ body {
   margin-right: 0.25rem;
 }
 
+/* About: affiliation logos beside each other */
+.affil-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+.affil-logos img {
+  display: block;
+  height: 69px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 /* Publications: topic filter and tags */
 .topic-filter {
   display: flex;
